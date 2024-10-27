@@ -7,7 +7,6 @@ export const router = createBrowserRouter([
     {
       path: "/",
       element: <Dashboard/>,
-    //   errorElement: <ErrorPage />,
       children: [
         {
           path: "/",
@@ -17,8 +16,6 @@ export const router = createBrowserRouter([
         {
           path: "/devicemanagement",
           element: <Device/>
-        //   loader: ({ params }) =>
-        //     fetch(`https://task-server-fawn.vercel.app/courses/${params.id}`),
         },
       
       ],

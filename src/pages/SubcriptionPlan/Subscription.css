@@ -64,7 +64,7 @@ border-bottom: 1px solid #cec8c8;
   }
 
 
-  @media (max-width: 772px) {
+  @media (max-width: 768px) {
     .subscription-container {
       margin: 0 o;
       padding: 0px;

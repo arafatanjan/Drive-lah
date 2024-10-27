@@ -53,11 +53,7 @@
   padding-right: 0;
 }
 
-/* Disabled sections */
-/* .sidebar-item.disabled {
-  color: #b3b3b3;
-  cursor: not-allowed;
-} */
+
 
 .sidebar-item-disabled {
   color: rgb(193, 197, 197);
@@ -74,8 +70,8 @@
 
 .sidebar-dropdown-container {
   display: none; 
-  width: 100%;
-  padding: 14px 0 14px 14px;
+  width: 90%;
+  padding: 14px 0 14px 0px;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -102,7 +98,7 @@
 }
 
 /* Media query to show the dropdown on smaller screens */
-@media (max-width: 772px) {
+@media (max-width: 768px) {
   .sidebar-dropdown-container {
     display: block;
   }

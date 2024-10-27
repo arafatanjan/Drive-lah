@@ -93,7 +93,7 @@
   }
 
 
-  @media (max-width: 772px) {
+  @media (max-width: 768px) {
    
     .dropdown-container {
       display: block; 

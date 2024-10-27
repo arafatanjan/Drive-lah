@@ -1,11 +1,23 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
+## Project Name:
+Drive lah
 
 ## Installation:
 
 - Clone the repository.
 - Install dependencies using npm install.
 - Run the project using npm run dev.
+
+## Routes:
+
+- '/'
+- '/devicemanagement'
+
+## Technology:
+
+- React
+- JS
+- Css
+
+

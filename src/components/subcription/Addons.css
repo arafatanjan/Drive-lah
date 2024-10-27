@@ -105,7 +105,7 @@ input[type="checkbox"] {
   width: 100%;
 }
 
-@media (max-width: 772px) {
+@media (max-width: 768px) {
   .addons-grid {
     flex-direction: column;
     gap: 15px;
