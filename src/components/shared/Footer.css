@@ -1,63 +1,49 @@
-/* Container to center the button horizontally */
-
-.Footer-container{
-  border-top: 1px solid #eaeaea; 
+.Footer-container {
+  border-top: 1px solid #eaeaea;
 }
 .next-button-container {
-    display: flex;
-    justify-content:end; 
-    margin: 0 12%;
-    padding: 20px 85px 20px 20px;
+  display: flex;
+  justify-content: end;
+  margin: 0 12%;
+  padding: 20px 85px 20px 20px;
+}
+
+.next-button-container a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/*  button */
+.next-button {
+  background-color: #ffeb80;
+  color: #007b85;
+  padding: 10px 8%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.next-button:hover {
+  background-color: #ffe066;
+}
+
+.next-button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .next-button-container {
+    padding: 20px;
   }
 
-  .next-button-container a {
-    width: 100%;
-    display: flex;
-    justify-content:center; 
-    text-decoration: none; 
-
-  }
-  
-  /* Styling for the button */
   .next-button {
-    background-color: #ffeb80;
-    color: #007b85; 
-    padding: 10px 8%; 
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
   }
-  
-  /* Hover effect for the button */
-  .next-button:hover {
-    background-color: #ffe066; 
-  }
-  
-  .next-button:focus {
-    outline: none;
-  }
-  
-  /* Disabled state (if needed) */
-  /* .next-button:disabled {
-    background-color: #ffeeba; 
-    cursor: not-allowed;
-    opacity: 0.6;
-  } */
-
-
-  @media (max-width: 768px) {
-
-    .next-button-container {
-      padding: 20px;
-    }
-
-    .next-button {
-      width: 100%; 
-      padding: 15px 0; 
-      font-size: 18px; 
-    } 
-  }
-  
+}

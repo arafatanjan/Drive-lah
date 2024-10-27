@@ -1,5 +1,5 @@
-import React from 'react';
-import './CardDetails.css'; // Import CSS for styling
+import React from "react";
+import "./CardDetails.css";
 
 const CardDetails = () => {
   return (
@@ -8,17 +8,16 @@ const CardDetails = () => {
 
       <div className="card-inputs">
         <div className="number-inputs">
-        <i class="fa-solid fa-credit-card"></i>
-        <input
-          type="text"
-          placeholder="1234 5678 1234 5678"
-          // className="card-number-input"
-        />
-        
+          <i class="fa-solid fa-credit-card"></i>
+          <input
+            type="text"
+            placeholder="1234 5678 1234 5678"
+            // className="card-number-input"
+          />
         </div>
         <div className="cvc-inputs">
-        <input type="text" placeholder="MM/YY"  />
-        <input type="text" placeholder="CVC"  />
+          <input type="text" placeholder="MM/YY" />
+          <input type="text" placeholder="CVC" />
         </div>
       </div>
 
@@ -28,7 +27,7 @@ const CardDetails = () => {
       </p>
 
       <p className="more-info">
-        Learn more about the plans here -{' '}
+        Learn more about the plans here -{" "}
         <a href="#" className="info-link">
           What is the right plan for me?
         </a>
@@ -38,7 +37,6 @@ const CardDetails = () => {
         You will be able to switch between plans easily later as well. Speak to
         our host success team if you need any clarifications.
       </p>
-      
     </div>
   );
 };

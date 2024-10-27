@@ -1,84 +1,79 @@
 /* Navbar container */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #00a9b0; 
-    padding: 10px 20px;
-    height: 50px;
-    color: white;
-    font-family: 'Poppins', 'Montserrat', sans-serif;
-  }
-  
-  /* Left side of the navbar */
-  .navbar-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  
-  .logo {
-    width: 60px;
-    height: auto;
-    margin-right: 10px;
-  }
-  
-  /* Right side of the navbar */
-  .navbar-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Navigation links */
-  .navbar-right a {
-    margin-right: 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-right a:hover {
-    color: #f0f0f0; 
-  }
-  
-  /* Profile image */
-  .profile {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%; 
-    object-fit: cover;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00a9b0;
+  padding: 10px 20px;
+  height: 50px;
+  color: white;
+  font-family: "Poppins", "Montserrat", sans-serif;
+}
 
-  .menu-icon {
-    display: none; /* Hide by default */
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-  }
+/* Left side of the navbar */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
 
-  /* Mobile responsive styles */
+.logo {
+  width: 60px;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Right side of the navbar */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation links */
+.navbar-right a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-right a:hover {
+  color: #f0f0f0;
+}
+
+/* Profile image */
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .menu-icon {
-    display: block; /* Show menu icon on mobile */
+    display: block;
   }
 
   .navbar-right a {
-    display: none; 
+    display: none;
   }
 
   .navbar-left {
     flex: 1;
-    justify-content: center; 
+    justify-content: center;
   }
-  .navbar-left h3{
+  .navbar-left h3 {
     font-size: 28px;
   }
 
   .logo {
     width: 80px;
   }
-
-  
 }
-  
