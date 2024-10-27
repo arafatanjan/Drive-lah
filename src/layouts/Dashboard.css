@@ -1,0 +1,122 @@
+.dashboard-container {
+  min-height: 100vh;
+  /* background-color: #f7fafc;  */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px auto 20px auto;
+  /* border-radius: 10px; */
+  /* min-width: 800px; */
+
+  @media (min-width: 768px) {
+    /* md:flex-row */
+     flex-direction: row; 
+  }
+}
+
+/* Sidebar container */
+.sidebar {
+  width: 150px;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Unordered list styling */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar items */
+.sidebar-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  color: #006d85;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #f0f4f7;
+}
+
+/* Active section */
+.sidebar-item.active {
+  color: #00b2b3;
+  font-weight: bold;
+  border-left: 3px solid #00b2b3;
+  background-color: #f0f4f7;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+/* Disabled sections */
+/* .sidebar-item.disabled {
+  color: #b3b3b3;
+  cursor: not-allowed;
+} */
+
+.sidebar-item-disabled {
+  color: rgb(193, 197, 197);
+}
+
+/* Checkmark (completed sections) */
+.checkmark {
+  color: #00b2b3;
+  font-weight: bold;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+.sidebar-dropdown-container {
+  display: none; 
+  width: 100%;
+  padding: 14px 0 14px 14px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.dropdown-select {
+  width: 90%;
+  padding: 12px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.dropdown-select:focus {
+  outline: none;
+  border-color: #00b2b3;
+}
+
+.outlet-content {
+  flex: 1;
+  padding: 1.5rem;
+  max-width: 900px;
+}
+
+/* Media query to show the dropdown on smaller screens */
+@media (max-width: 772px) {
+  .sidebar-dropdown-container {
+    display: block;
+  }
+
+  .dashboard-container {
+    margin: 0px 0px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  
+.outlet-content { 
+  padding: 0 1.5rem;
+}
+}

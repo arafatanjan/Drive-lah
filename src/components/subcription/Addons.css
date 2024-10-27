@@ -1,0 +1,116 @@
+/* Container for the add-ons */
+.addons-container {
+  margin: 20px 0;
+}
+
+.addons-container h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.addons-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.addon-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  flex-grow: 1;
+  justify-content: space-between;
+  transition: border-color 0.3s ease;
+}
+
+.addon-item input[type="checkbox"] {
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+/* Change border color on hover */
+.addon-item:hover {
+  border-color: #00b2b3;
+}
+
+/* Disabled state for unavailable add-ons */
+/* .addon-item.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #f3f3f3;
+  } */
+
+/* Styling for the label text */
+.addon-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #006d85;
+}
+
+/* Hide the default appearance of the checkbox */
+.custom-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #00b2b3;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+/* Checkbox checked state */
+.custom-checkbox:checked {
+  background-color: #00b2b3;
+  border-color: #00b2b3;
+}
+
+/* Checkbox checkmark */
+/* .custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: white; 
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.addon-item small {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Checkbox input styling */
+input[type="checkbox"] {
+  accent-color: #00b2b3; /* Custom checkbox color */
+}
+
+.divider {
+  border: 1px solid #d8dfdf;
+  margin-left: -20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: calc(100% + 37px);
+}
+
+.card-content {
+  width: 100%;
+}
+
+@media (max-width: 772px) {
+  .addons-grid {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card-content {
+    width: 100%;
+  }
+}

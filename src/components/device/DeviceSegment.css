@@ -1,0 +1,161 @@
+/* Container for each device form */
+.device-form {
+  /* border: 1px solid #e0e0e0; */
+  padding: 20px;
+  border-radius: 8px;
+  /* margin-bottom: 0px; */
+  /* border-bottom: 1px solid #e0e0e0; */
+}
+
+/* Rows that hold input fields and toggles */
+.device-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.device-input {
+  flex: 1;
+}
+
+.device-input label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.device-input input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Header for each device section */
+.device-form h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Toggle switch styling */
+.device-toggle {
+  flex: 1;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-label {
+  font-size: 12px;
+  color: #555;
+  margin-right: 20px;
+  flex-grow: 1;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 25px;
+  height: 14px;
+  background-color: #ddd;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-switch.on {
+  background-color: #00b2b3;
+}
+
+.toggle-knob {
+  position: absolute;
+  top: 1.5px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: left 0.3s ease;
+}
+
+.toggle-switch.on .toggle-knob {
+  left: 15px;
+}
+
+.partition {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Upload box styling */
+.upload-container {
+  flex: 1;
+}
+
+.upload-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.upload-box {
+  width: 50%;
+  height: 80px;
+  padding: 20px;
+  border: 1px solid #e6e8e8;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #006d85;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+.divider {
+  border: 1px solid #d8dfdf;
+  margin-left: -20px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: calc(100% + 37px);
+}
+
+@media (max-width: 768px) {
+  .device-row {
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
+  }
+
+  .device-form {
+    border: none;
+    padding: 0 20px 0 0;
+    margin-bottom: 10px;
+  }
+  .device-row {
+    margin-bottom: 10px;
+  }
+  .device-input label {
+    margin-bottom: 10px;
+  }
+  .device-form h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .upload-container label {
+    margin-bottom: 5px;
+  }
+  .toggle-container label {
+    margin: 10px 0;
+  }
+  .upload-box {
+    width: 94%;
+  }
+}

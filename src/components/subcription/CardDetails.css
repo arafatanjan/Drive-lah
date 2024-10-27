@@ -1,0 +1,126 @@
+/* Container for card details */
+.card-details-container {
+    margin: 20px 0;
+  }
+  
+  .card-details-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Input fields for card details */
+  .card-inputs {
+    display: flex;
+     justify-content:space-between; 
+    align-items: center;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f7f7f7;
+     
+  }
+  
+  .number-inputs {
+    flex: 3;
+    /* min-width: 0; */
+  }
+  
+  .cvc-inputs {
+    flex: 1;
+    /* min-width: 0; */
+    display: flex;
+    gap:5px
+  }
+  
+  .card-inputs input {
+    border: none; 
+     background: none;
+    outline: none;
+    font-size: 16px;
+    color: #555;
+    width: 90%;
+  }
+  
+  .card-number-input {
+    flex: 3;
+    padding-right: 15px;
+  }
+  
+  .card-expiry-input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .card-cvc-input {
+    flex: 1;
+  }
+  
+  /* Disclaimer text */
+  .disclaimer {
+    font-size: 12px;
+    color: #b3aeae;
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+  
+  /* Link for more information */
+  .more-info {
+    margin-top: 20px;
+    font-size: 18px;
+    white-space: nowrap;
+  }
+  
+  .info-link {
+    color: #00b2b3;
+  }
+  
+  .info-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Clarification paragraph */
+  .clarifications {
+    margin-top: 10px;
+    color: #555;
+    font-size: 18px;
+  }
+
+  /* .next-button {
+    width: 100%; 
+    padding: 15px 0; 
+    font-size: 18px; 
+  } */
+
+
+  @media (max-width: 772px) {
+
+    .card-inputs {
+      width: 90%;
+    }
+
+    .disclaimer {
+      white-space: normal; 
+    }
+
+    .more-info {
+      white-space: normal; 
+    }
+
+    .clarifications {
+      
+      margin-bottom: 10rem;
+    }
+
+    /* .next-button {
+      width: 100%; 
+      padding: 15px 0; 
+      font-size: 18px; 
+    } */
+
+
+  }
+
+  
+  
